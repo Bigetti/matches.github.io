@@ -86,7 +86,7 @@ function minusButton()
 		if (status == 2 || status == 4 || status == 1)
 		{
 			console.log(status, get, guess,compGet, compGuess, together);
-			if (status == 2 || 1)
+			if (status == 2 || status == 1)
 			{
 				if (get > 0)
 					{get--}
