@@ -189,6 +189,7 @@ function changeGetPlayer(newGet)
 	document.getElementById("compGetField").innerHTML="взял";
 	console.log("Время угадать сколько вместе");
 	n = 1;
+	getTeg("poleStatusa").innerHTML="Угадайте сколько у Вас вместе в кулаках"
 	return compGet, compGuess, together, rand;
 }
 
@@ -202,6 +203,7 @@ function changeGuessPlayer(newGuess)
 
 	console.log(status, get, guess,compGet, compGuess, together, rand);
  	document.getElementById("guess2").src="images/guessbutton2.png";
+ 	getTeg("poleStatusa").innerHTML="Вскрывайтесь"
  	return rand;
 
 }
@@ -292,7 +294,7 @@ function nextRound()
 	document.getElementById("guess2").src="images/guessbutton1.png";
 	document.getElementById("compHand").src="images/handclosed2.png";
 	getTeg("playerHand").src="images/handclosed.png";
-	getTeg("poleStatusa").innerHTML=""
+	getTeg("poleStatusa").innerHTML="Берите спички в кулак"
 
 	playerBox(player);
 	compBox(comp);
